@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodieland</title>
     <link rel="stylesheet" href="./assets/scss/main.css" />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body>
     <header>
@@ -60,61 +60,155 @@
     </header>
 
     <main>
-      
       <section class="categories">
-        <div class="categories-header">
+        <div class="categories__header">
           <h2>Categories</h2>
-          <a href="#" class="view-all">View All Categories</a>
+          <button class="view-all">View All Categories</button>
         </div>
-        <div class="category-list">
-
+        <div class="categories__grid">
           <div class="category-card">
             <img src="./assets/images/1.png" alt="Breakfast" />
             <p>Breakfast</p>
           </div>
-          
-          
-      </section>
-      
-      <!-- <section class="categories">
-        <div class="container">
-          <div class="categories-inner">salam dostlar</div>
+          <div class="category-card">
+            <img src="./assets/images/2.png" alt="Vegan" />
+            <p>Vegan</p>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/3.png" alt="Meat" />
+            <p>Meat</p>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/4.png" alt="Dessert" />
+            <p>Dessert</p>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/5.png" alt="Lunch" />
+            <p>Lunch</p>
+          </div>
+          <div class="category-card">
+            <img src="./assets/images/6.png" alt="Chocolate" />
+            <p>Chocolate</p>
+          </div>
         </div>
-      </section> -->
+      </section>
+
 
       <section class="recipes">
-        <div class="container">
-          <div class="recipes-inner">
-            <div class="recipes-header">
-              <h1 class="title">Simple and tasty recipes</h1>
-              <p class="text">
-                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqut enim
-                ad minim
-              </p>
+        <div class="recipes__header">
+          <h2>Simple and tasty recipes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim</p>
+        </div>
+        <div class="recipes__grid">
+          <div class="recipe-card">
+            <img src="./assets/images/card1.png" alt="Big and Juicy Wagyu Beef Cheeseburger">
+            <div class="recipe-card__info">
+              <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍔 Snack</span>
+              </div>
             </div>
-            <div class="recipes-cards">
-              <div class="card" style="width: 18rem">
-                <img src="./assets/images/burger.svg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card2.png" alt="Fresh Lime Roasted Salmon with Ginger Sauce">
+            <div class="recipe-card__info">
+              <h3>Fresh Lime Roasted Salmon with Ginger Sauce</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🐟 Fish</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card3.png" alt="Strawberry Oatmeal Pancake with Honey Syrup">
+            <div class="recipe-card__info">
+              <h3>Strawberry Oatmeal Pancake with Honey Syrup</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍳 Breakfast</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card4.png" alt="Fresh and Healthy Mixed Mayonnaise Salad">
+            <div class="recipe-card__info">
+              <h3>Fresh and Healthy Mixed Mayonnaise Salad</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🥗 Healthy</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card5.png" alt="Chicken Meatballs with Cream Cheese">
+            <div class="recipe-card__info">
+              <h3>Chicken Meatballs with Cream Cheese</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍖 Meat</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card promo">
+            <div class="promo__content">
+              <p>Don't forget to eat healthy food</p>
+              <a href="#">www.foodisland.com</a>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card1.png" alt="Fruity Pancake with Orange & Blueberry">
+            <div class="recipe-card__info">
+              <h3>Fruity Pancake with Orange & Blueberry</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍰 Sweet</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card2.png" alt="The Best Easy One Pot Chicken and Rice">
+            <div class="recipe-card__info">
+              <h3>The Best Easy One Pot Chicken and Rice</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍗 Chicken</span>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card">
+            <img src="./assets/images/card4.png" alt="The Creamiest Creamy Chicken and Bacon Pasta">
+            <div class="recipe-card__info">
+              <h3>The Creamiest Creamy Chicken and Bacon Pasta</h3>
+              <div class="recipe-card__details">
+                <span>⏱ 30 Minutes</span>
+                <span>🍝 Noodles</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Deliciousness to your inbox</h2>
+            <p class="newsletter__text">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+            <form class="newsletter__form">
+                <input type="email" class="newsletter__input" placeholder="Your email address..." required>
+                <button type="submit" class="newsletter__button">Subscribe</button>
+            </form>
+        </div>
+        <img src="./assets/images/bowl1.png" alt="Food items" class="food-left">
+        <img src="./assets/images/salad1.png" alt="Food bowl" class="food-right">
+    </section>
+
 
     <footer></footer>
 
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </body>
 </html>
