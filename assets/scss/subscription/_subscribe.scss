@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+
+    line-height: 1.6;
+  }
+  
+  // Newsletter section
+  .newsletter {
+    position: relative;
+    background-color: #e6f7fb;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+    
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    &__title {
+      font-size: 48px;
+      color: #000;
+      margin-bottom: 24px;
+      font-weight: bold;
+    }
+    
+    &__text {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #555;
+      font-size: 16px;
+    }
+    
+    &__form {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    
+    &__input {
+      flex-grow: 1;
+      padding: 15px 20px;
+      border-radius: 16px;
+      font-size: 14px;
+      
+    }
+    
+    &__button {
+      padding: 21px 47px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      font-weight: bold;
+   
+      
+      
+      }
+    }
+  
+  
+  // Food images
+  .food-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    height: auto;
+    z-index: 1;
+  }
+  
+  .food-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: auto;
+    z-index: 1;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .food-left, .food-right {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter {
+      &__title {
+        font-size: 2rem;
+      }
+    }
+    
+    .food-left, .food-right {
+      width: 150px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .newsletter {
+      padding: 40px 15px;
+      
+      &__form {
+        flex-direction: column;
+      }
+      
+      &__title {
+        font-size: 1.8rem;
+      }
+      
+      &__text {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+      }
+    }
+    
+    .food-left, .food-right {
+      width: 100px;
+      opacity: 0.5;
+    }
+  }
