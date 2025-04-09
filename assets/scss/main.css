@@ -179,19 +179,20 @@ header .container .nav-bar .social li a img {
   color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
 }
-.recipes__grid {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.recipes .recipes__grid {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recipe-card {
   background: linear-gradient(180deg, rgba(231, 249, 253, 0), #E7F9FD);
+  width: calc(33.33% - 40px);
   border-radius: 30px;
   overflow: hidden;
   text-align: left;
-  width: 400px;
-  height: 434px;
+  overflow: hidden;
+  margin: 15px 0;
 }
 .recipe-card img {
   width: 100%;
@@ -199,14 +200,19 @@ header .container .nav-bar .social li a img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
-  padding: 16px;
+  overflow: hidden;
+}
+.recipe-card .recipe-img {
+  margin: 16px;
 }
 .recipe-card__info {
-  padding: 24px;
+  padding: 0 24px;
 }
 .recipe-card__info h3 {
   font-size: 24px;
-  padding-bottom: 24px;
+}
+.recipe-card__info .recipe-card__details {
+  padding: 20px 0;
 }
 .recipe-card__info__details {
   font-size: 14px;
@@ -222,6 +228,7 @@ header .container .nav-bar .social li a img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 10px;
 }
 .recipe-card.promo .promo__content {
   padding: 2rem;
@@ -257,11 +264,11 @@ body {
   position: relative;
   background-color: #e6f7fb;
   padding: 60px 20px;
+  border-radius: 30px;
   text-align: center;
   overflow: hidden;
 }
 .newsletter__container {
-  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
